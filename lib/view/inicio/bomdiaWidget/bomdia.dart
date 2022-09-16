@@ -1,15 +1,13 @@
 import 'bomelement/bomelement.dart';
 import 'package:flutter/material.dart';
 
-Widget bomdiaWidget(){
-  void n(){print("pressed notification");}
+Widget bomdiaWidget(BuildContext context){
   return  Container(
-    padding: EdgeInsets.all(5),
     alignment: Alignment.center,
     child: Column(
       children: [
         Padding(
-          padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+          padding: EdgeInsets.fromLTRB(30, 20, 30, 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -44,17 +42,12 @@ Widget bomdiaWidget(){
         ),
         Wrap(
           children: [
-            bomelement("pira nos caipira", "../assets/luan/piranoscaipira.jpg"),
-
-            bomelement("turbina", "../assets/luan/turbina.jpg"),
-
-            bomelement("tapinha", "../assets/luan/tapinha.jpg"),
-
-            bomelement("botadona", "../assets/luan/botadona.jpg"),
-
-            bomelement("no meio do rolo", "../assets/luan/nomeiodorolo.jpg"),
-
-            bomelement("bota sem amor", "../assets/luan/botasemamor.jpg"),
+            bomelement("Song", "../assets/unnamed.png","Unnamed",context),  
+            bomelement("Song", "../assets/unnamed.png","Unnamed",context),
+            bomelement("Song", "../assets/unnamed.png","Unnamed",context),
+            bomelement("Song", "../assets/unnamed.png","Unnamed",context),
+            bomelement("Song", "../assets/unnamed.png","Unnamed",context),
+            bomelement("Song", "../assets/unnamed.png","Unnamed",context),
             
           ],
         )

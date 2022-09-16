@@ -2,11 +2,32 @@ import 'package:flutter/material.dart';
 import 'inputbuscaWidget/inputbusca.dart';
 import 'musicaframeWidget/musicaframe.dart';
 
-buscaView(){
+buscaView(context){
   return SingleChildScrollView(
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        Padding(
+          padding:const EdgeInsets.fromLTRB(30, 40, 30, 0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children:  [
+              const Text("Buscar",
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white,
+                ),
+              ),
+              IconButton(
+                onPressed: (){}, 
+                icon: Icon(Icons.camera_alt_outlined),
+                color: Colors.white,
+                iconSize: 30,
+              )
+            ],
+          )
+        ),
         //input busca
         inputbuscaWidget(),
         
@@ -23,17 +44,17 @@ buscaView(){
 
 
         //musica frame
-        musicaframeWidget("../assets/luan/piranoscaipira.jpg","pira nos caipira","Luan Pereira"),
+        musicaframeWidget("../assets/unnamed.png","Song","Unnamed",context),
 
-        musicaframeWidget("../assets/luan/turbina.jpg","turbina","Luan Pereira"),
-        
-        musicaframeWidget("../assets/luan/tapinha.jpg","tapinha","Luan Pereira"),
+        musicaframeWidget("../assets/unnamed.png","Song","Unnamed",context),
 
-        musicaframeWidget("../assets/luan/botadona.jpg","botadona","Luan Pereira"),
+        musicaframeWidget("../assets/unnamed.png","Song","Unnamed",context),
 
-        musicaframeWidget("../assets/luan/nomeiodorolo.jpg","no meio do rolo","Luan Pereira"),
+        musicaframeWidget("../assets/unnamed.png","Song","Unnamed",context),
 
-        musicaframeWidget("../assets/luan/botasemamor.jpg","bota sem amor","Luan Pereira"),
+        musicaframeWidget("../assets/unnamed.png","Song","Unnamed",context),
+
+        musicaframeWidget("../assets/unnamed.png","Song","Unnamed",context),
         
       ],
     )
